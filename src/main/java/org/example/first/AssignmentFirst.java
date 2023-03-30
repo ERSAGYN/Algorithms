@@ -1,5 +1,8 @@
 package org.example.first;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class AssignmentFirst {
     public static void main(String[] args) {
         //Scanner scanner = new Scanner(System.in);
@@ -9,6 +12,11 @@ public class AssignmentFirst {
         System.out.println(sumOfArray(3, new int[]{2,6,7,3,6,3,2,4,10}));
         System.out.println(sumOfPosInt(5));
         System.out.println(sumOfPowers(4,3));
+        System.out.println(maxValueOfArray(new int[]{2,6,7,3,6,17,2,4,10}));
+        System.out.println(GCD(36, 48));
+        reverseSequence(3);
+        reverseSequenceStrings(3);
+        System.out.println(sumOfDigits(777));
     }
     public static int sumOfSquares(int num) {
         if (num == 1) return 1;
@@ -35,7 +43,50 @@ public class AssignmentFirst {
         return (int)Math.pow(b,n) + sumOfPowers(b, n-1);
     }
 
-    /*public static int maxValueOfArray(int[] array) {
+    public static int maxValueOfArray(int[] array) {
+        if (array.length == 1) return array[0];
+        return Math.max(array[array.length-1], maxValueOfArray(Arrays.copyOf(array, array.length - 1)));
+    }
 
+    public static int GCD(int a, int b) {
+        int reminder = Math.max(a,b) % Math.min(a,b);
+        return reminder == 0 ? Math.min(a,b) : GCD(Math.min(a,b), reminder);
+    }
+
+    public static void reverseSequence(int n) {
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        if (n == 1) {
+            System.out.println(num);
+            return;
+        }
+        reverseSequence(n-1);
+        System.out.println(num);
+    }
+
+    public static void reverseSequenceStrings(int n) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        if (n == 1) {
+            System.out.println(str);
+            return;
+        }
+        reverseSequenceStrings(n-1);
+        System.out.println(str);
+    }
+
+    /*public static String reverseSequenceStrings2(int n) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+
+        if (n == 1) return str;
+        String str2 = reverseSequenceStrings2(n-1);
+        System.out.println(str2);
+        return str2;
     }*/
+
+    public static int sumOfDigits(int num) {
+        if(num / 10 < 1) return num;
+        return num%10 + sumOfDigits(num/10);
+    }
 }
