@@ -3,11 +3,12 @@ package org.example.first;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
 public class AssignmentFirst {
     public static void main(String[] args) {
         //Scanner scanner = new Scanner(System.in);
 
-        System.out.println(sumOfSquares(4));
+        /*System.out.println(sumOfSquares(4));
         System.out.println(fibonacci(10));
         System.out.println(sumOfArray(3, new int[]{2,6,7,3,6,3,2,4,10}));
         System.out.println(sumOfPosInt(5));
@@ -16,7 +17,13 @@ public class AssignmentFirst {
         System.out.println(GCD(36, 48));
         reverseSequence(3);
         reverseSequenceStrings(3);
-        System.out.println(sumOfDigits(777));
+        System.out.println(sumOfDigits(777));*/
+        int[] array = {5,6,3,2,1,6};
+        bubbleSort(array , 6);
+        for (int i =0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+
     }
     public static int sumOfSquares(int num) {
         if (num == 1) return 1;
@@ -88,5 +95,19 @@ public class AssignmentFirst {
     public static int sumOfDigits(int num) {
         if(num / 10 < 1) return num;
         return num%10 + sumOfDigits(num/10);
+    }
+
+
+
+    public static void bubbleSort(int[] array, int n) {
+        if(n == 0) return;
+        for (int j = 0; j < array.length - 1; j++) {
+            if(array[j] > array[j+1]) {
+                int temp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = temp;
+            }
+        }
+        bubbleSort(array, n-1);
     }
 }
