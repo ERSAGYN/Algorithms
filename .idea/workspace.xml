@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05becf96-6c8c-4a2a-8495-3c85774498b6" name="Changes" comment="Done all assignments">
+    <list default="true" id="05becf96-6c8c-4a2a-8495-3c85774498b6" name="Changes" comment="БубльСрут">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/AssignmentSecond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fifth.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/seventh.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sixth.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/first/AssignmentFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/first/AssignmentFirst.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +43,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ersag\IdeaProjects\Algorithms\src\main\resources" />
+      <recent name="C:\Users\ersag\IdeaProjects\Algorithms" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680186621963</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="БубльСрут">
+      <created>1681322240607</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681322240607</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,6 +96,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create" />
     <MESSAGE value="Done all assignments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done all assignments" />
+    <MESSAGE value="БубльСрут" />
+    <option name="LAST_COMMIT_MESSAGE" value="БубльСрут" />
   </component>
 </project>
