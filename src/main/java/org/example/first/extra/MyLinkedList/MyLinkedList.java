@@ -66,6 +66,14 @@ public class MyLinkedList<T> {
         return (T) current.data;
     }
 
+    public MyNode<T> getNode(int index) {
+        MyNode<T> current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        return current;
+    }
+
     public MyNode<T> getHead() {
         return head;
     }

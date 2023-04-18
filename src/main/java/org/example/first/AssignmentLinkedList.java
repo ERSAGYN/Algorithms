@@ -9,20 +9,21 @@ public class AssignmentLinkedList {
     public static void main(String[] args) {
         MyLinkedList<Integer> integers = new MyLinkedList<>();
         integers.add(1);
-        integers.add(5);
-        integers.add(5);
+        integers.add(2);
+        integers.add(3);
         integers.add(4);
         integers.add(5);
         integers.add(6);
-        integers.add(5);
-        integers.add(87);
-        integers.add(65);
-        integers.add(5);
-        integers.add(6);
+        integers.add(7);
+        integers.add(8);
+        integers.add(9);
+        integers.add(10);
+        integers.add(11);
         //integers.setHead(middleNode(integers.getHead()));
         /*reverseList(integers);
         integers.printList();*/
-        removeDuplicates(integers);
+        //System.out.println(nFromTail(integers, 3).getData());
+        reverseListRecursive(integers, 0);
         integers.printList();
     }
 
@@ -47,6 +48,14 @@ public class AssignmentLinkedList {
         }
     }
 
+    public static void reverseListRecursive(MyLinkedList myLinkedList, int counter) {
+        int temp = (Integer) myLinkedList.get(counter);
+        myLinkedList.update(counter, myLinkedList.get(myLinkedList.getSize() - counter - 1));
+        myLinkedList.update(myLinkedList.getSize() - counter - 1, temp);
+        if(counter >= (myLinkedList.getSize()/2)-1) return;
+        reverseListRecursive(myLinkedList, counter+1);
+    }
+
     public static void removeNodes(MyLinkedList myLinkedList, int value) {
         int counter = 0;
         while (myLinkedList.remove(value)) {
@@ -66,5 +75,25 @@ public class AssignmentLinkedList {
                 }
             }
         }
+    }
+
+    public static int maxTwinSum(MyLinkedList myLinkedList){
+        int counter = myLinkedList.getSize() - 1;
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < myLinkedList.getSize() / 2; i++){
+            max = Math.max(max, (Integer) myLinkedList.get(i) + (Integer) myLinkedList.get(counter));
+            counter--;
+        }
+        return max;
+    }
+
+    public static MyNode nFromTail(MyLinkedList myLinkedList, int n){
+        MyNode first = myLinkedList.getNode(n-1);
+        MyNode last = myLinkedList.getHead();
+        while(first != null && first.next != null) {
+            first = first.next;
+            last = last.next;
+        }
+        return last;
     }
 }
