@@ -1,5 +1,7 @@
 package org.example.first;
 
+import org.example.first.extra.Book;
+import org.example.first.extra.Employee;
 import org.example.first.extra.Student;
 
 import java.io.BufferedReader;
@@ -29,7 +31,7 @@ public class AssignmentSecond {
         Collections.sort(integers);
         System.out.println(integers);
 
-        seventh();
+        tenth();
     }
 
     public static void third() {
@@ -109,7 +111,73 @@ public class AssignmentSecond {
             }
         });
         for (Student s: students) {
-            System.out.println(s.getGrade() + " " + s.getName());
+             System.out.println(s.getGrade() + " " + s.getName());
+        }
+    }
+
+    public static void eighth() {
+        ArrayList<Book> books = new ArrayList<>();
+        int sum = 0, average;
+        try (BufferedReader br = new BufferedReader(new FileReader("src/main/resources/eighth.txt"))) {
+            String strCurrentLine;
+            while ((strCurrentLine = br.readLine()) != null) {
+                Book book = new Book();
+                String[] strings = strCurrentLine.split(" ", 3);
+                book.setTitle(strings[0]);
+                book.setAuthor(strings[1]);
+                book.setDate(strings[2]);
+                books.add(book);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Kitaptin atyn engiziniz:");
+        String search = scanner.nextLine();
+        boolean contains = false;
+        for (Book b: books) {
+            if(b.getTitle().equals(search)) {
+                System.out.printf("Book title: %s,\nBook author: %s,\nBook date: %s", b.getTitle(),b.getAuthor(),b.getDate());
+                contains = true;
+                return;
+            }
+        }
+        if(!contains) System.out.println("the book was not found");
+    }
+
+    public static void ninth() {
+        ArrayList<Employee> employees = new ArrayList<>();
+        int total = 0;
+        try (BufferedReader br = new BufferedReader(new FileReader("src/main/resources/ninth.txt"))) {
+            String strCurrentLine;
+            while ((strCurrentLine = br.readLine()) != null) {
+                Employee employee = new Employee();
+                String[] strings = strCurrentLine.split(" ", 2);
+                employee.setName(strings[0]);
+                employee.setSalary(Integer.parseInt(strings[1]));
+                employees.add(employee);
+                total += employee.getSalary();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Total: " + total);
+    }
+
+    public static void tenth() {
+        ArrayList<String> dates = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader("src/main/resources/tenth.txt"))) {
+            String strCurrentLine;
+            while ((strCurrentLine = br.readLine()) != null) {
+                dates.add(strCurrentLine);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Collections.sort(dates);
+        for (String s: dates) {
+            System.out.println(s);
         }
     }
 

@@ -1,0 +1,4 @@
+Enrico 20000
+Michael 2300
+Roberto 3000
+Eduardo 30000

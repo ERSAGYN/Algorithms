@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05becf96-6c8c-4a2a-8495-3c85774498b6" name="Changes" comment="БубльСрут">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/AssignmentSecond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fifth.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/seventh.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sixth.txt" afterDir="false" />
+    <list default="true" id="05becf96-6c8c-4a2a-8495-3c85774498b6" name="Changes" comment="Ееесолайде">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/AssignmentLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyLinkedList/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyLinkedList/MyNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/eighth.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ninth.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tenth.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/first/AssignmentSecond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/first/AssignmentSecond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/first/extra/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681322240607</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ееесолайде">
+      <created>1681636263988</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681636263988</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +107,7 @@
     <MESSAGE value="Create" />
     <MESSAGE value="Done all assignments" />
     <MESSAGE value="БубльСрут" />
-    <option name="LAST_COMMIT_MESSAGE" value="БубльСрут" />
+    <MESSAGE value="Ееесолайде" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ееесолайде" />
   </component>
 </project>
