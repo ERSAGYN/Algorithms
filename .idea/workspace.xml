@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05becf96-6c8c-4a2a-8495-3c85774498b6" name="Changes" comment="Ееесолайде2">
+    <list default="true" id="05becf96-6c8c-4a2a-8495-3c85774498b6" name="Changes" comment="Ееесолайде3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mystacks/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdAssignment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/first/AssignmentLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/first/AssignmentLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyLinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyLinkedList/MyLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681818728325</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ееесолайде3">
+      <created>1681822116025</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681822116025</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +116,7 @@
     <MESSAGE value="БубльСрут" />
     <MESSAGE value="Ееесолайде" />
     <MESSAGE value="Ееесолайде2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ееесолайде2" />
+    <MESSAGE value="Ееесолайде3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ееесолайде3" />
   </component>
 </project>
