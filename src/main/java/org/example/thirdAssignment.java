@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.first.extra.MyLinkedList.MyLinkedList;
+import org.example.first.extra.MyLinkedList.MyNode;
+
 import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.Stack;
@@ -9,13 +12,12 @@ public class thirdAssignment {
         /*for (int i: first()) {
             System.out.println(i);
         }*/
-        /*for (int i: second(new int[]{8,4,6,2,3})) {
-            System.out.println(i);
-        }*/
         Stack<Integer> stack = new Stack();
         //for (int i = 0; i  < 5; i++) stack.add(i);
         //for (int i: stackReverseRecursion(stack, new Stack())) System.out.println(i);
-        System.out.println(brackets("([(]))"));
+        //System.out.println(brackets("([(]))"));
+        second(new int[]{8,4,6,2,3}).printList();
+
     }
 
     public static void heapify(int[] arr, int i) {
@@ -53,19 +55,24 @@ public class thirdAssignment {
         return stackReverseRecursion(stack, reversed);
     }
 
-    public static int[] second(int[] prices) {
-        int[] result = new int[prices.length];
-        for (int i = 0; i < prices.length; i++) {
-            for(int j = i; j < prices.length; j++) {
-                result[i] = prices[i];
-                if(i == j) continue;
-                if(prices[i] >= prices[j]) {
-                    result[i] = prices[i] - prices[j];
-                    break;
-                }
+    public static MyLinkedList<Integer> second(int[] prices) {
+        MyLinkedList<Integer> linkedList = new MyLinkedList<>();
+        for(int i: prices) {
+            linkedList.add(i);
+        }
+        MyNode currentNode = linkedList.getHead();
+        MyNode checkNode = linkedList.getHead();
+        while(checkNode.next != null) {
+            if((int)currentNode.getData() >= (int)checkNode.getData() && currentNode != checkNode) {
+                currentNode.setData((int)currentNode.getData() - (int)checkNode.getData());
+                currentNode = currentNode.next;
+                checkNode = currentNode;
+            }
+            else {
+                checkNode = checkNode.next;
             }
         }
-        return result;
+        return linkedList;
     }
 
     public static LinkedList<Integer> first() {
