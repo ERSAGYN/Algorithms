@@ -4,6 +4,7 @@ import org.example.first.extra.MyLinkedList.MyLinkedList;
 import org.example.first.extra.MyLinkedList.MyNode;
 
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -15,8 +16,10 @@ public class thirdAssignment {
         Stack<Integer> stack = new Stack();
         //for (int i = 0; i  < 5; i++) stack.add(i);
         //for (int i: stackReverseRecursion(stack, new Stack())) System.out.println(i);
-        //System.out.println(brackets("([(]))"));
-        second(new int[]{8,4,6,2,3}).printList();
+        //System.out.println(bracketsValid("{(()())[]}"));
+        int[] arr = new int[]{8,4,6,2,3};
+        heapify2(arr, arr.length, 0);
+        for (int i: arr) System.out.println(i);
 
     }
 
@@ -24,7 +27,7 @@ public class thirdAssignment {
         int left = 2*i + 1;
         int right = 2*i + 2;
         int largest = i;
-        if(left < arr.length && arr[left] > arr[i]) largest = left;
+        if(left < arr.length && arr[left] > arr[largest]) largest = left;
         if(right < arr.length && arr[right] > arr[largest]) largest = right;
         if(largest != i) {
             int temp = arr[i];
@@ -34,19 +37,42 @@ public class thirdAssignment {
         }
     }
 
-    public static boolean brackets(String s) {
-        int parenthesesCount = 0, curlyCount = 0, squareCount = 0;
-        boolean isValid;
-        for (int i = 0; i < s.length(); i++) {
-            if(parenthesesCount < 0 || curlyCount < 0 || squareCount < 0) break;
-            if (s.charAt(i) == '(') parenthesesCount++;
-            if (s.charAt(i) == ')') parenthesesCount--;
-            if (s.charAt(i) == '{') curlyCount++;
-            if (s.charAt(i) == '}') curlyCount--;
-            if (s.charAt(i) == '[') squareCount++;
-            if (s.charAt(i) == ']') squareCount--;
+    static void heapify2(int[] a, int n, int i) {
+        int largest = i;
+        int l = 2 * i + 1;
+        int r = 2 * i + 2;
+        if (l < n && a[l] > a[largest]) largest = l;
+        if (r < n && a[r] > a[largest]) largest = r;
+        if (largest != i) {
+            int temp = a[i];
+            a[i] = a[largest];
+            a[largest] = temp;
+            heapify2(a, n, largest);
         }
-        return parenthesesCount == 0 && curlyCount == 0 && squareCount == 0;
+    }
+
+
+    /*public static int hungryStudents(boolean students[], boolean doners[]) {
+        Queue<Boolean> studentsList = new LinkedList<>();
+        Queue<Boolean> donersList = new LinkedList<>();
+        for(boolean i: students) studentsList.add(i);
+        for(boolean i: doners) donersList.add(i);
+
+        if(studentsList.peek() == donersList.peek())
+    }*/
+
+    public static boolean bracketsValid(String s) {
+        Stack<Character> brackets = new Stack<>();
+        char checkBracket = ' ';
+        for (int i = 0; i < s.length(); i++) {
+            brackets.add(s.charAt(i));
+            if(brackets.peek() == checkBracket + 1 || brackets.peek() == checkBracket + 2) {
+                brackets.pop();
+                brackets.pop();
+            }
+            if(!brackets.isEmpty()) checkBracket = brackets.peek();
+        }
+        return brackets.isEmpty();
     }
 
     public static Stack<Integer> stackReverseRecursion(Stack stack, Stack reversed) {

@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05becf96-6c8c-4a2a-8495-3c85774498b6" name="Changes" comment="Ееесолайде3">
+    <list default="true" id="05becf96-6c8c-4a2a-8495-3c85774498b6" name="Changes" comment="Improved second">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/BinarySearch/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/BubbleSort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/HeapSort/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/Insertion/Insertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MergeSort/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyGraph/MyGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyQueue/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyStack/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/QuickSort/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/SelectionSort/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyLinkedList/MyNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyLinkedList/MyNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyLinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/first/extra/MyLinkedList/MyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdAssignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdAssignment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682533646072</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Improved second">
+      <created>1682791088208</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682791088209</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +141,7 @@
     <MESSAGE value="Ееесолайде" />
     <MESSAGE value="Ееесолайде2" />
     <MESSAGE value="Ееесолайде3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ееесолайде3" />
+    <MESSAGE value="Improved second" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved second" />
   </component>
 </project>

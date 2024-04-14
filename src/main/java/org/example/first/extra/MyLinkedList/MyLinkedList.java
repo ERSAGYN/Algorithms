@@ -25,6 +25,33 @@ public class MyLinkedList<T> {
         size++;
     }
 
+    public void addFirst(T value){
+        MyNode<T> temp = new MyNode<>(value);
+        temp.next = head;
+        head = temp;
+        size++;
+    }
+
+    public void addLast(T value) {
+        MyNode<T> newNode = new MyNode<>(value);
+
+        if (head == null) {
+            head = newNode;
+        } else {
+            MyNode<T> current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+
+        size++;
+    }
+
+    public T getFirst(){
+        return head.getData();
+    }
+
     public boolean remove(T removeItem) {
         MyNode<T> currentNode = head;
         if(head.data == removeItem) {
@@ -44,6 +71,19 @@ public class MyLinkedList<T> {
         size--;
         return true;
     }
+
+    public T removeFirst() {
+        T temp = null;
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            temp = head.getData();
+            head = head.next;
+        }
+        size--;
+        return temp;
+    }
+
     public  void removeByIndex(int index){
         MyNode<T> currentNode = head;
         if(index == 0){
@@ -72,6 +112,10 @@ public class MyLinkedList<T> {
             current = current.next;
         }
         return current;
+    }
+
+    public boolean isEmpty(){
+        return getSize()==0;
     }
 
     public MyNode<T> getHead() {
